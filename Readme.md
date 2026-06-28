@@ -1,4 +1,4 @@
-# Full-Stack Flask & MongoDB Application
+# Full-Stack Flask & MongoDB Application By Fazal Ahmed
 
 A clean, decoupled full-stack web application featuring a frontend user interface and a backend API service that interacts with MongoDB Atlas.
 
