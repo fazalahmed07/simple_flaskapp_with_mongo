@@ -1,0 +1,6 @@
+.env
+*.env
+__pycache__/
+learnings.txt
+
+backend/backend_data.txt

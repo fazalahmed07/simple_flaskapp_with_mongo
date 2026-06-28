@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Simple quick styling for error alert */
+        .error-box {
+            background-color: #ffdddd;
+            color: #d8000c;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #d8000c;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h3>Happy {{ day_of_the_week }}!</h3>
+
+        {% if error %}
+            <div class="error-box">
+                <strong>Error:</strong> {{ error }}
+            </div>
+        {% endif %}
+
+        <form action="/submit" method="POST">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
